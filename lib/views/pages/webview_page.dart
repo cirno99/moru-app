@@ -3,7 +3,7 @@ import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:miru_app/data/services/cookie_utils.dart';
 import 'package:miru_app/models/extension.dart';
 import 'package:miru_app/utils/miru_storage.dart';
-import 'package:webview_cookie_manager/webview_cookie_manager.dart';
+import 'package:webview_cookie_manager_plus/webview_cookie_manager_plus.dart';
 
 class WebViewPage extends StatefulWidget {
   const WebViewPage({
@@ -28,11 +28,12 @@ class _WebViewPageState extends State<WebViewPage> {
     if (loadUrl.host != Uri.parse(url).host) {
       return;
     }
+
     final cookies = await cookieManager.getCookies(loadUrl.toString());
     final cookieString =
         cookies.map((e) => '${e.name}=${e.value}').toList().join(';');
     debugPrint('$url $cookieString');
-    setCookie(widget.extension!,cookieString);
+    setCookie(widget.extension!, cookieString);
   }
 
   @override

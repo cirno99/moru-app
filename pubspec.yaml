@@ -28,11 +28,11 @@ dependencies:
   media_kit: ^1.1.10+1
   media_kit_video: ^1.2.4
   media_kit_libs_video: ^1.0.4
-  package_info_plus: ^5.0.1
+  package_info_plus: ^8.2.1
   #palette_generator: ^0.3.3+2
   path: ^1.8.3
   path_provider: ^2.1.0
-  file_picker: ^6.1.1
+  file_picker: ^9.2.3
   screenshot: ^2.1.0
   scrollable_positioned_list: ^0.3.8
   tmdb_api: ^2.1.5
@@ -44,7 +44,7 @@ dependencies:
     git:
       url: https://github.com/MiaoMint/flutter_windows_webview
       ref: master
-  webview_cookie_manager: ^2.0.6
+  webview_cookie_manager_plus: ^2.0.16
   html: ^0.15.4
   xpath_selector_html_parser: ^3.0.1
   device_info_plus: ^9.0.3
@@ -52,7 +52,11 @@ dependencies:
   crypto: ^3.0.3
   extended_image: ^8.2.0
   flutter_hls_parser: ^2.0.1
-  image_gallery_saver: ^2.0.3
+  # image_gallery_saver: ^1.7.1
+  image_gallery_saver:
+    git:
+      url: https://github.com/knottx/image_gallery_saver.git
+      ref: knottx-latest
   flutter_socks_proxy: ^0.0.3
   logging: ^1.2.0
   share_plus: ^7.2.1
