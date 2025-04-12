@@ -104,7 +104,7 @@ class PlaylistAndroidTile extends StatelessWidget {
           style: TextStyle(
             color: selected
                 ? Theme.of(context).colorScheme.onPrimary
-                : Theme.of(context).colorScheme.onBackground,
+                : Theme.of(context).colorScheme.onSurface,
           ),
         ),
       ),

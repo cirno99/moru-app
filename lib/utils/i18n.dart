@@ -7,8 +7,9 @@ import 'package:get/get.dart';
 import 'package:miru_app/router/router.dart';
 import 'package:miru_app/utils/miru_storage.dart';
 
-final _context =
-    (Platform.isAndroid || Platform.isIOS) ? Get.context! : rootNavigatorKey.currentContext!;
+final _context = (Platform.isAndroid || Platform.isIOS)
+    ? Get.context!
+    : rootNavigatorKey.currentContext!;
 
 class I18nUtils {
   static final flutterI18nDelegate = FlutterI18nDelegate(

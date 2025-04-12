@@ -56,7 +56,8 @@ class SearchPageController extends GetxController {
       if (search.value.isEmpty) {
         resultFuture = ExtensionHelper(element.extension).latest(1);
       } else {
-        resultFuture = ExtensionHelper(element.extension).search(search.value, 1);
+        resultFuture =
+            ExtensionHelper(element.extension).search(search.value, 1);
       }
 
       futures.add(

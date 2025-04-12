@@ -68,6 +68,9 @@ dependencies:
   re_highlight: ^0.0.3
   dynamic_color: ^1.7.0
   super_paging: ^0.1.0
+  rust_lib_miru_app:
+    path: rust_builder
+  flutter_rust_bridge: 2.9.0
 
 dev_dependencies:
   flutter_test:
@@ -76,6 +79,8 @@ dev_dependencies:
   isar_generator: ^3.1.0+1
   build_runner: ^2.4.5
   json_serializable: ^6.7.0
+  integration_test:
+    sdk: flutter
 
 flutter:
   uses-material-design: true

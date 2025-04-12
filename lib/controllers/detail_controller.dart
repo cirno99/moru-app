@@ -46,8 +46,7 @@ class DetailPageController extends GetxController {
   final RxString aniListID = ''.obs;
   final Rx<TMDBDetail?> tmdb = Rx(null);
   final Rx<Extension?> extensions = Rx(null);
-  ExtensionType get type =>
-      extensions.value?.type ?? ExtensionType.bangumi;
+  ExtensionType get type => extensions.value?.type ?? ExtensionType.bangumi;
   Extension? get extension => extensions.value;
 
   ExtensionDetail? get detail => data.value;

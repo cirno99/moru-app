@@ -46,6 +46,6 @@ class Gaps {
 
   static const Widget empty = SizedBox.shrink();
 
-/// 补充一种空Widget实现 https://github.com/letsar/nil
-/// https://github.com/flutter/flutter/issues/78159
+  /// 补充一种空Widget实现 https://github.com/letsar/nil
+  /// https://github.com/flutter/flutter/issues/78159
 }

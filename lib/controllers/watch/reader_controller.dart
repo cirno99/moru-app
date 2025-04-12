@@ -46,7 +46,8 @@ class ReaderController<T> extends GetxController {
     try {
       error.value = '';
       watchData.value = null;
-      watchData.value = await ExtensionHelper(extension).watch(cuurentPlayUrl) as T;
+      watchData.value =
+          await ExtensionHelper(extension).watch(cuurentPlayUrl) as T;
     } catch (e) {
       error.value = e.toString();
     }

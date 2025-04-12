@@ -470,7 +470,8 @@ class VideoPlayerController extends GetxController {
     watchData = null;
     subtitles.clear();
     final playUrl = playList[index.value].url;
-    watchData = await ExtensionHelper(extension).watch(playUrl) as ExtensionBangumiWatch;
+    watchData = await ExtensionHelper(extension).watch(playUrl)
+        as ExtensionBangumiWatch;
   }
 
   // 获取 torrent 媒体文件

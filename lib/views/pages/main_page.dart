@@ -211,8 +211,8 @@ class _AndroidMainPageState extends fluent.State<AndroidMainPage> {
           'common.update'.i18n),
       _Destination(
           Icons.extension_outlined, Icons.extension, 'common.extension'.i18n),
-      _Destination(
-          Icons.more_horiz_outlined, Icons.more_horiz_outlined, 'common.more'.i18n),
+      _Destination(Icons.more_horiz_outlined, Icons.more_horiz_outlined,
+          'common.more'.i18n),
     ];
     return Obx(
       () => Scaffold(

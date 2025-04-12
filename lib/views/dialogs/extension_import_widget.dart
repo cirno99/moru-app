@@ -15,6 +15,8 @@ import 'package:url_launcher/url_launcher.dart';
 class ExtensionImportWidget extends StatelessWidget {
   String url = "";
 
+  ExtensionImportWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(

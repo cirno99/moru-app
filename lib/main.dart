@@ -1,3 +1,7 @@
+// The original content is temporarily commented out to allow generating a self-contained demo - feel free to uncomment later.
+//
+// The original content is temporarily commented out to allow generating a self-contained demo - feel free to uncomment later.
+
 import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
@@ -22,6 +26,8 @@ import 'package:miru_app/utils/miru_storage.dart';
 import 'package:miru_app/utils/application.dart';
 import 'package:miru_app/views/widgets/platform_widget.dart';
 import 'package:window_manager/window_manager.dart';
+import 'package:miru_app/src/rust/api/simple.dart';
+import 'package:miru_app/src/rust/frb_generated.dart';
 
 void main(List<String> args) async {
   runZonedGuarded(() async {
@@ -43,6 +49,7 @@ void main(List<String> args) async {
           windowController: WindowController.fromWindowId(windowId),
         ),
       };
+      await RustLib.init();
       runApp(windows[arguments["name"]]);
       return;
     }
@@ -98,7 +105,7 @@ void main(List<String> args) async {
         SystemChrome.restoreSystemUIOverlays();
       });
     }
-
+    await RustLib.init();
     runApp(const MainApp());
   }, (error, stack) {
     logger.severe("", error, stack);

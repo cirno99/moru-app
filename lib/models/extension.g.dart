@@ -106,7 +106,7 @@ Map<String, dynamic> _$ExtensionDetailToJson(ExtensionDetail instance) =>
 ExtensionEpisodeGroup _$ExtensionEpisodeGroupFromJson(
         Map<String, dynamic> json) =>
     ExtensionEpisodeGroup(
-      title: json['title'] as String,
+      title: json['title'] as String? ?? '默认标题',
       urls: (json['urls'] as List<dynamic>)
           .map((e) => ExtensionEpisode.fromJson(e as Map<String, dynamic>))
           .toList(),

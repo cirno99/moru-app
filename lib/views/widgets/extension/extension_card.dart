@@ -42,8 +42,7 @@ class _ExtensionCardState extends State<ExtensionCard> {
     setState(() {
       isInstall = ExtensionUtils.extensions.containsKey(widget.package);
       hasUpgrade = isInstall &&
-          ExtensionUtils.extensions[widget.package]!.version !=
-              widget.version;
+          ExtensionUtils.extensions[widget.package]!.version != widget.version;
     });
     super.initState();
   }

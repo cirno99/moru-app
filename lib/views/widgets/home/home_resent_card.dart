@@ -60,7 +60,8 @@ class _HomeRecentCardState extends State<HomeRecentCard> {
     if (_extension == null) {
       return;
     }
-    _update = await ExtensionHelper(_extension!).checkUpdate(widget.history.url);
+    _update =
+        await ExtensionHelper(_extension!).checkUpdate(widget.history.url);
     if (mounted) {
       setState(() {});
     }
@@ -75,7 +76,7 @@ class _HomeRecentCardState extends State<HomeRecentCard> {
     //   maximumColorCount: 2,
     // );
 
-   // primaryColor = paletteGenerator.colors.firstOrNull;
+    // primaryColor = paletteGenerator.colors.firstOrNull;
 
     if (mounted) {
       setState(() {});

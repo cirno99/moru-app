@@ -9,9 +9,9 @@ class HomePageController extends GetxController {
       <ExtensionType, List<Favorite>>{}.obs;
 
   final ScrollController pageController = ScrollController(
-    //initialPage: 0,
-   // viewportFraction: 0.5,
-  );
+      //initialPage: 0,
+      // viewportFraction: 0.5,
+      );
   double page = 0.0;
 
   @override

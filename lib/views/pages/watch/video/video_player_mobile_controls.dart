@@ -375,7 +375,8 @@ class _VideoPlayerMobileControlsState extends State<VideoPlayerMobileControls> {
                   }
 
                   return Card(
-                    color: Theme.of(context).colorScheme.surfaceVariant,
+                    color:
+                        Theme.of(context).colorScheme.surfaceContainerHighest,
                     elevation: 0,
                     child: Padding(
                       padding: const EdgeInsets.all(10),
@@ -672,7 +673,7 @@ class _Footer extends StatelessWidget {
                     controller.toggleSideBar(SidebarTab.qualitys);
                   },
                   style: ButtonStyle(
-                    padding: MaterialStateProperty.all(
+                    padding: WidgetStateProperty.all(
                       const EdgeInsets.symmetric(
                         horizontal: 10,
                         vertical: 5,
